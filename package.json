@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "runrun": "tsc src/api.ts && node dist/api.js"
+    "runrun": "ts-node src/basic.ts"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",

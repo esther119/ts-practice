@@ -49,3 +49,23 @@ const test2 = (networkState: NetworkState) => {
 console.log(user.greet());
 const user1 = new ClassName();
 console.log(user1.greet());
+
+enum ResourceType {
+  BOOK,
+  AUTHOR,
+  FILM,
+}
+
+interface Resource<T> {
+  uid: number;
+  resourceType: ResourceType;
+  data: T;
+}
+
+const resource: Resource<string> = {
+  uid: 1,
+  resourceType: ResourceType.AUTHOR,
+  data: "hi",
+};
+
+console.log(resource);
